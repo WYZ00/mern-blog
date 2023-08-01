@@ -4,7 +4,9 @@
   "description": "Mern app to learn fullstack development",
   "main": "server.js",
   "scripts": {
-    "server": "nodemon"
+    "server": "nodemon server",
+    "client": "npm start --prefix client",
+    "dev": "concurrently \"npm run server\" \"npm run client\""
   },
   "keywords": [],
   "author": "THT",
